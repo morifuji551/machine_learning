@@ -16,7 +16,7 @@ class K_NEAREST():
         self.k = k
         self.prediction = self.predict()
 
-    def calc_distance(self): 
+    def calc_distance(self): #calc_distanceをこっちに入れたの計算量的に頭悪い
         distance = np.zeros((len(self.Data_array), len(self.Data_array)))
         for i in range(len(self.Data_array)):
             for j in range(len(self.Data_array)):
