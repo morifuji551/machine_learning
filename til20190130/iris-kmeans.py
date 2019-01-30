@@ -49,7 +49,7 @@ class KMEANS():
         
 (iris_data, target) = load_iris(return_X_y = True)
 num_data = len(target)
-target_init = np.array([i % 3 for i in range(num_data)]) #designate initial value 
+target_init = np.array([np.random.randint(3) for i in range(num_data)]) #designate initial value 
 
 Data_array = [Data(iris_data[i], target[i], target_init[i]) for i in range(num_data)]
 compare_center = Compare_Center()
