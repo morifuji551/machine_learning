@@ -48,7 +48,6 @@ class K_NEAREST():
 
     
 (data, target) = load_iris(return_X_y = True)
-data, target = [np.array(d) for d in [data, target]]
 Data_array = [Data(data[i], target[i]) for i in range(len(target))]
 
 result_list = np.zeros((max_k, 2))
