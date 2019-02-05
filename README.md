@@ -1,2 +1,2 @@
 # machine_learning
-This is a repository for my own study for machine learning. 
+This is a repository for my own study of machine learning. 
